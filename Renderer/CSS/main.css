@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+body {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+button {
+    -webkit-app-region: no-drag;
+}
+
+.container {
+    background-color: slategray;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container #exit {
+    width: 24px;
+    height: 24px;
+    position: fixed;
+    right: 8px;
+    top: 7px;
+    background-image: url("../../Assets/Icons/Exit.png");
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.container .name {
+    width: 100%;
+    position: fixed;
+    left: 13px;
+    top: 8px;
+    cursor: default;
+    font-family: 'hooge 05_55', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    -webkit-app-region: drag;
+}
+
+.container #cover {
+    width: 195px;
+    height: 195px;
+    margin-top: 30px;
+    margin-left: -2.8px;
+    border-radius: 4px;
+}
+
+.container #title {
+    width: 100%;
+    text-align: center;
+    margin-top: -8px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'hooge 05_55', sans-serif;
+    cursor: default;
+}
+
+.container .buttons {
+    width: 50%;
+    margin-top: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .buttons button {
+    background-color: transparent;
+    border: none;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#play-pause {
+    width: 36px;
+    height: 36px;
+    background-image: url("../../Assets/Icons/play.png");
+}
+
+#next {
+    width: 24px;
+    height: 24px;
+    background-image: url("../../Assets/Icons/next.png");
+}
+
+#previouse {
+    width: 24px;
+    height: 24px;
+    background-image: url("../../Assets/Icons/previouse.png");
+}

@@ -1,0 +1,41 @@
+{
+    "name": "faouzia",
+    "productName": "Faouzia Player",
+    "version": "1.0.0",
+    "description": "Faouzia's music player",
+    "license": "MIT",
+    "author": "Jad Solaiman",
+    "type": "commonjs",
+    "main": "main.js",
+    "build": {
+        "appId": "com.jad.faouziaplayer",
+        "productName": "Faouzia Player",
+        "directories": {
+            "output": "dist"
+        },
+        "files": [
+            "**/*"
+        ],
+        "win": {
+            "target": "nsis",
+            "icon": "Assets/Icons/icon.ico"
+        },
+        "linux": {
+            "target": "AppImage"
+        }
+    },
+    "scripts": {
+        "start": "electron .",
+        "build": "electron-builder",
+        "build:win": "electron-builder --win",
+        "build:mac": "electron-builder --mac",
+        "build:linux": "electron-builder --linux"
+    },
+    "dependencies": {
+        "toastify-js": "^1.12.0"
+    },
+    "devDependencies": {
+        "electron": "^40.8.0",
+        "electron-builder": "^26.8.1"
+    }
+}
