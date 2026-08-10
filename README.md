@@ -1,7 +1,7 @@
 # Faouzia Player
 
 ## 🎶 About
-This desktop app is a music player for my favourite artist "Faouzia" in a pixel art style, it contains the best songs of her.
+This desktop app is a music player for my favourite artist "Faouzia" in pixel art style, it contains the best songs of her.
 
 ## 🛠️ Made with
 - HTML
